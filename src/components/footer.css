@@ -1,3 +1,29 @@
 footer{
     max-width: 100%;
+    text-align: center;
 }
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px;
+    margin: 2rem;
+    font-size: larger;
+}
+
+.footer-content h5{
+    font-weight: bolder;
+}
+
+.footer-content ul{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.footer-content ul li i{
+    font-weight: bold;
+    
+}
+

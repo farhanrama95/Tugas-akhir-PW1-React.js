@@ -1,4 +1,4 @@
-import React from 'react';
+// IMPORT BOOTSTRAP SERTA ASSET YG DIPERLUKAN
 import Container from 'react-bootstrap/Container';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
