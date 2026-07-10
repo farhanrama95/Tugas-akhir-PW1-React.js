@@ -19,10 +19,10 @@ function Gallery() {
     return (
         <Container>
             <Row xs={1} md={2} className="g-6">
-                {Array.from({ length: 4 }).map((_, idx) => (
+                {galleryImg.map((img, idx) => (
                     <Col key={idx}>
                         <Card>
-                            <Card.Img variant="top" src={gallery1} />
+                            <Card.Img variant="top" src={img} />
                             <Card.Body>
                                 <Card.Title>Card title</Card.Title>
                                 <Card.Text>
