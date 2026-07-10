@@ -1,0 +1,28 @@
+.hero{
+    background-image:
+        linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+        url("../assets/img/hero/hero.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;  
+    justify-content: center;    /* Tengah secara vertikal */
+}
+.hero p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+.hero h1{
+    font-size: 64px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+}

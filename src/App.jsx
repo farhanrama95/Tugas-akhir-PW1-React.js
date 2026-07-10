@@ -1,5 +1,7 @@
 // IMPORT SEMUA COMPONENT
 import Header from './components/header'
+import Navbar from './components/navbar'
+import Gallery from './components/gallery'
 import Footer from './components/footer'
 
 // PAKAI CSS UNIVERSAL
@@ -9,6 +11,8 @@ function App() {
   return (
     <>
     <Header />
+    <Navbar />
+    <Gallery />
     <Footer />
     </>
   )
