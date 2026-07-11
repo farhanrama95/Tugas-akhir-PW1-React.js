@@ -1,20 +1,27 @@
 import './navbar.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { motion } from 'motion/react'
 import { useState, useEffect } from 'react'
 
 function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 992); // breakpoint 'lg' Bootstrap
 
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 992);
+    };
 
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('resize', handleResize);
 
-    // cleanup: hapus listener saat komponen unmount
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
   return (
@@ -38,27 +45,42 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link" href="#home">
+              <motion.a
+                whileHover={{ scale: isMobile ? 1 : 1.3 }}
+                style={{ transformOrigin: 'right center' }}
+                className="nav-link"
+                href="#home"
+              >
                 Home
-              </a>
+              </motion.a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#gallery">
+              <motion.a  whileHover={{ scale: isMobile ? 1 : 1.3 }}
+                style={{ transformOrigin: 'right center' }} className="nav-link" href="#gallery">
                 Gallery
-              </a>
+              </motion.a>
+            </li>
+            <li>
+                <motion.a whileHover={{ scale: isMobile ? 1 : 1.3 }}
+                style={{ transformOrigin: 'right center' }} className="nav-link" href="#about">
+                    About
+                </motion.a>
             </li>
 
             {/* Dropdown Services */}
             <li className="nav-item dropdown">
               
-              <a  className="nav-link dropdown-toggle"
+               <motion.a 
+                whileHover={{ scale: isMobile ? 1 : 1.3 }}
+                style={{ transformOrigin: 'right center' }}
+                className="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Services
-              </a>
+              </motion.a>
               <ul className="dropdown-menu dropdown-menu-dark">
                 <li>
                   <a className="dropdown-item" href="#web-design">
@@ -82,9 +104,10 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#faq">
+              <motion.a whileHover={{ scale: isMobile ? 1 : 1.3 }}
+                style={{ transformOrigin: 'right center' }} className="nav-link" href="#faq">
                 FaQ
-              </a>
+              </motion.a>
             </li>
           </ul>
         </div>

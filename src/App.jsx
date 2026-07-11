@@ -2,12 +2,24 @@
 import Header from './components/header'
 import Navbar from './components/navbar'
 import Gallery from './components/gallery'
+import About from './components/about'
 import Footer from './components/footer'
+
+import { useEffect } from 'react';
 
 // PAKAI CSS UNIVERSAL
 import './App.css'
 
 function App() {
+  useEffect(() => {
+
+    if (window.history.scrollRestoration) {
+      window.history.scrollRestoration = 'manual';
+    }
+
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <>
     <section id='home'>
@@ -18,6 +30,10 @@ function App() {
 
     <section id='gallery'>
       <Gallery />
+    </section>
+
+    <section id='about'>
+      <About />
     </section>
 
     <Footer />
