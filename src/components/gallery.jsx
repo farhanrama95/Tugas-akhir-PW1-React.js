@@ -18,6 +18,7 @@ const galleryImg = [gallery1,gallery2,gallery3,gallery4,gallery5,gallery6];
 function Gallery() {
     return (
         <Container>
+            <h1 className='head'>Gallery</h1>
             <Row xs={1} md={2} className="g-6">
                 {galleryImg.map((img, idx) => (
                     <Col key={idx}>

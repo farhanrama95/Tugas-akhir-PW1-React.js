@@ -50,7 +50,7 @@ h3{
     .profile-card{
         flex-direction: column;
         padding: 0rem;
-        margin: 1rem;
+        margin: 7rem 2rem 7rem 2rem;
     }
 
     .profile-card img{

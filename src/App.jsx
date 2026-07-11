@@ -2,6 +2,7 @@
 import Header from './components/header'
 import Navbar from './components/navbar'
 import Gallery from './components/gallery'
+import Service from './components/service'
 import About from './components/about'
 import Footer from './components/footer'
 
@@ -30,6 +31,10 @@ function App() {
 
     <section id='gallery'>
       <Gallery />
+    </section>
+
+    <section id='service'>
+      <Service />
     </section>
 
     <section id='about'>

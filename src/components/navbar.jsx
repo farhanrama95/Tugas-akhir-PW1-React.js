@@ -71,36 +71,11 @@ function Navbar() {
             <li className="nav-item dropdown">
               
                <motion.a 
-                whileHover={{ scale: isMobile ? 1 : 1.3 }}
-                style={{ transformOrigin: 'right center' }}
-                className="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+whileHover={{ scale: isMobile ? 1 : 1.3 }}
+                style={{ transformOrigin: 'right center' }} className="nav-link" href="#service"
               >
                 Services
               </motion.a>
-              <ul className="dropdown-menu dropdown-menu-dark">
-                <li>
-                  <a className="dropdown-item" href="#web-design">
-                    Web Design
-                  </a>
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#development">
-                    Development
-                  </a>
-                </li>
-                <li>
-                  <hr className="dropdown-divider" />
-                </li>
-                <li>
-                  <a className="dropdown-item" href="#consulting">
-                    Consulting
-                  </a>
-                </li>
-              </ul>
             </li>
 
             <li className="nav-item">
