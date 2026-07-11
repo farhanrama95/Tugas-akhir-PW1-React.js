@@ -15,7 +15,10 @@ function Footer() {
                         <motion.li whileHover={{ scale: 1.55,}}><i className='fa-brands fa-github'></i></motion.li>
                     </ul>
                 </div>
-                &copy; Mohamad Farhan Ramadhani | SI.25.230.0011
+                <div className="fact">
+                    Website dibuat dengan <i class="fa-brands fa-react"></i>
+                </div>
+                &copy; Mohamad Farhan Ramadhani (SI.25.230.0011)
             </footer>
         </>
     );

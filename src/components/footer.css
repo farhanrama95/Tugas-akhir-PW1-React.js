@@ -28,3 +28,25 @@ footer{
     
 }
 
+.fact{
+    align-items: center;
+    padding: 1rem;
+    justify-content: center;
+    display: flex;
+
+}
+
+.fact i{
+    animation: spin 3s linear infinite;
+    font-size: 30px;
+}
+
+/* ANIMASI LOGO REACT */
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

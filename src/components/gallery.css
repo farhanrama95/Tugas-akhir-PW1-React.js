@@ -1,4 +1,14 @@
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-img{
-    border-radius: 20px;
+
+.galleryImg {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin: 2rem;
+  border-radius: 1rem;
 }

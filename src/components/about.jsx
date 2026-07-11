@@ -1,10 +1,22 @@
-import './about.css'
-import profileImg from '../assets/img/gallery/profile.png'
+import './about.css';
+import profileImg from '../assets/img/gallery/profile.png';
+import { motion} from 'motion/react';
 
 // FUNGSI KOMPONEN ABOUT
 function About() {
     return (
-        <div className="profile-card">
+        <motion.div 
+        initial={{opacity:0}}
+        whileInView={{
+            opacity:1,
+            scale:1,
+            transition:{duration:0.9}
+        }}
+        viewport={{
+            once: true
+        }}
+
+        className="profile-card">
             <h2>Profil pembuat</h2>
             <img src={profileImg} alt="" />
             <div className="bio">
@@ -15,8 +27,7 @@ function About() {
                     <p>INSTITUT WIDYA PRATAMA | Sistem Informasi</p>
                 </div>
             </div>
-
-        </div>
+        </motion.div>
     );
 }
 
