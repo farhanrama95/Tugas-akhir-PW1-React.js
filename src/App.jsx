@@ -10,9 +10,16 @@ import './App.css'
 function App() {
   return (
     <>
-    <Header />
+    <section id='home'>
+      <Header />
+    </section>
+
     <Navbar />
-    <Gallery />
+
+    <section id='gallery'>
+      <Gallery />
+    </section>
+
     <Footer />
     </>
   )

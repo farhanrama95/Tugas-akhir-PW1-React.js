@@ -1,4 +1,5 @@
 import './footer.css'
+import { motion } from "motion/react"
 
 // FUNGSI KOMPONEN FOOTER
 function Footer() {
@@ -8,10 +9,10 @@ function Footer() {
                 <div className="footer-content">
                     <h5>Ngoding</h5>
                     <ul>
-                        <li><i className='fa-brands fa-square-facebook'></i></li>
-                        <li><i className='fa-brands fa-twitter'></i></li>
-                        <li><i className='fa-brands fa-linkedin-in'></i></li>
-                        <li><i className='fa-brands fa-github'></i></li>
+                        <motion.li whileHover={{ scale: 1.55,}}><i className='fa-brands fa-square-facebook'></i></motion.li>
+                        <motion.li whileHover={{ scale: 1.55,}}><i className='fa-brands fa-twitter'></i></motion.li>
+                        <motion.li whileHover={{ scale: 1.55,}}><i className='fa-brands fa-linkedin-in'></i></motion.li>
+                        <motion.li whileHover={{ scale: 1.55,}}><i className='fa-brands fa-github'></i></motion.li>
                     </ul>
                 </div>
                 &copy; Mohamad Farhan Ramadhani | SI.25.230.0011
