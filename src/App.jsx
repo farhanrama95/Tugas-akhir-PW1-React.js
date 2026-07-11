@@ -10,6 +10,7 @@ import { useEffect } from 'react';
 
 // PAKAI CSS UNIVERSAL
 import './App.css'
+import Faq from './components/faq'
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,10 @@ function App() {
 
     <section id='service'>
       <Service />
+    </section>
+
+    <section id='faq'>
+      <Faq/>
     </section>
 
     <section id='about'>

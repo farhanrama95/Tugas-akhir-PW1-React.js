@@ -6,7 +6,7 @@
     padding: 0.5rem;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: auto;
 }
 
 .profile-card h2{
