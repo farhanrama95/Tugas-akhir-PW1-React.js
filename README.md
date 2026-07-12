@@ -12,10 +12,10 @@ Merupakan tugas akhir matkul PW1 semester 2
 ## Struktur folder src 📁
 
 -> src
-    -> assets
-        -> img
-            -> gallery
-            -> hero
+    - assets
+        - img
+            - gallery
+            - hero
 
     ->components
         - header.jsx
