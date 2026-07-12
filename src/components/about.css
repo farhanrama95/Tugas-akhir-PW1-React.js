@@ -94,4 +94,8 @@ h3{
     .univ p{
         font-size: 12px;
     }
+
+    .card-jdl{
+        display: none;
+    }
 }
