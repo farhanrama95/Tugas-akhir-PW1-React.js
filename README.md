@@ -48,3 +48,4 @@ Merupakan tugas akhir matkul PW1 semester 2
     - run kode "npm run dev" pada terminal ( CTRL + ` )
 
 2. Copy link dibawah
+    (https://tugas-akhir-farhanrama95.vercel.app/)
