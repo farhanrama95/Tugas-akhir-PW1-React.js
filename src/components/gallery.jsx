@@ -25,7 +25,6 @@ function Gallery() {
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                viewport={{ once: true }}
             >
                 Gallery
             </motion.h1>
@@ -37,7 +36,6 @@ function Gallery() {
                             initial={{ opacity: 0, y: 50 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5, delay: idx * 0.1, ease: "easeOut" }}
-                            viewport={{ once: true }}
                         >
                             <Card>
                                 <Card.Img variant="top" src={img} className='galleryImg' />

@@ -9,6 +9,15 @@
     height: auto;
 }
 
+.card-jdl{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .profile-card h2{
     font-weight: bold;
     display: none;

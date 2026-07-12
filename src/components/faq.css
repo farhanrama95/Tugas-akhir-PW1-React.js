@@ -1,11 +1,3 @@
-.faq-section{
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-
-
 .faq-section {
   padding: 60px 0;
 }
@@ -33,6 +25,10 @@
   font-weight: 500;
   border-radius: 8px !important;
   box-shadow: none !important;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .faq-item .accordion-button:not(.collapsed) {
@@ -50,16 +46,41 @@
   color: #555;
 }
 
-@media (max-width: 768px) {
+/* ===== MEDIA QUERY UNTUK TABLET & HP (di bawah 900px) ===== */
+@media (max-width: 900px) {
+  .faq-section {
+    padding: 2px 0;
+  }
+
+  .faq-head h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .faq-head p {
+    font-size: 0.9rem;
+  }
+
   .faq-item .accordion-button {
     font-size: 0.9rem !important;
     padding: 14px 16px !important;
   }
+
+  .faq-item .accordion-body {
+    font-size: 0.85rem !important;
+    padding: 14px 16px !important;
+  }
 }
 
-@media (max-width: 480px) {
+/* ===== MEDIA QUERY KHUSUS HP KECIL (di bawah 480px) ===== */
+@media (max-width: 500px) {
+  .faq-head h2 {
+    font-size: 1.25rem;
+  }
+
   .faq-item .accordion-button {
     font-size: 0.85rem !important;
-    padding: 12px 14px !important;
+    margin: 0rem 1rem 0rem 1rem !important;
+    width: calc(100% - 2rem) !important; 
   }
 }

@@ -1,16 +1,19 @@
 .service-con{
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
     background-color: rgb(48, 48, 48);
+    padding: 2rem;
 }
 
 .container-ser{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -45,13 +48,18 @@
     font-weight: bold;
 }
 
-@media (max-width:1000px){
+@media (max-width:900px){
+    .service-con{
+        min-height: 120vh;
+    }
     .box{
         margin: 1rem 2rem 1rem 2rem;
     }
 
     .container-ser{
         flex-direction: column;
+        margin: 0;
+        padding: 0;
     }
 
     .ser-head p{
