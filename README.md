@@ -17,7 +17,7 @@ Merupakan tugas akhir matkul PW1 semester 2
             - gallery
             - hero
 
-    ->components
+    - components
         - header.jsx
         - navbar.jsx
         - gallery.jsx
